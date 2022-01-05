@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lobster&family=Rampart+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="CodepenStyle.css">
+    <title>LUDO</title>      
+</head>
+<body style=" text-align: center;background-color: #0A1931;">
+    <div class="game">
+    <div class="house green">
+        <div class="box">
+            <div class="square square-one green">
+              <!-- <div class = "green1" id="G1">
+               
+              </div> -->
+            </div>
+            <div class="square square-two green">  </div>
+            <div class="square square-three green">  </div>
+            <div class="square square-four green">   </div>
+        </div>
+    </div>
+
+    <div class="house yellow" style="right: 0">
+        <div class="box">
+            <div class="square square-one yellow">
+              
+            </div>
+            <div class="square square-two yellow">
+             </div>
+            <div class="square square-three yellow">
+              </div>
+            <div class="square square-four yellow"> 
+             </div>
+        </div>
+    </div>
+
+    <div class="house red" style="bottom: 0">
+        <div class="box">
+            <div class="square square-one red">
+              
+            </div>
+            <div class="square square-two red">
+              
+            </div>
+            <div class="square square-three red">
+              
+            </div>
+            <div class="square square-four red">
+          
+            </div>
+        </div>
+    </div>
+
+    <div class="house blue" style="bottom: 0;right: 0">
+        <div class="box">
+            <div class="square square-one blue">
+              
+            </div>
+            <div class="square square-two blue">
+             
+            </div>
+            <div class="square square-three blue">
+            
+            </div>
+            <div class="square square-four blue">
+             
+            </div>
+        </div>
+    </div>
+            
+         <button onclick="d()" class= "green1" id="G1" style="top: 21.5%;left:13.7%;"></button>
+           <div class= "green1" id="G2"  style="top: 12.5%;left:13.7%;"></div>
+             <div class= "green1" id="G3" style="top: 12.5%;left:22.9%;"></div>
+               <div class= "green1" id="G4" style="top: 21.5%;left:22.9%;"></div>
+
+               <button  class= "blue1" id="B1" style="top: 72.5%;left:73.5%;"></button>
+           <div class= "blue1" id="B2"  style="top: 72.5%;left:82%;"></div>
+             <div class= "blue1" id="B3" style="top: 82%;left:73.5%;"></div>
+               <div class= "blue1" id="B4" style="top: 82%;left:82%;"></div>
+
+                <button class= "red1" id="R1" style="top: 72.5%;left:13.7%;"></button>
+           <div class= "red1" id="R2"  style="top: 72.5%;left:22.9%;"></div>
+             <div class= "red1" id="R3" style="top: 82%;left:22.9%;"></div>
+               <div class= "red1" id="R4" style="top: 82%;left:13.7%;"></div>
+
+                <button class= "yellow1" id="Y1" style="top: 21.5%;left:73.7%;"></button>
+           <div class= "yellow1" id="Y2"  style="top: 12.5%;left:82%;"></div>
+             <div class= "yellow1" id="Y3" style="top: 12.5%;left:73.7%;"></div>
+               <div class= "yellow1" id="Y4" style="top: 21.5%;left:82%;"></div>
+
+    <div  class="home"></div>
+    <div   id="Yel13" class="cells" style="top: 40%;"></div>
+    <div id="Gre1" class="cells g-start" style="top: 40%;left:6.66%;"></div>
+    <div id="Gre2" class="cells" style="top: 40%;left:13.32%;"></div>
+    <div id="Gre3" class="cells" style="top: 40%;left:19.98%;"></div>
+    <div id="Gre4" class="cells" style="top: 40%;left:26.64%;"></div>
+    <div id="Gre5"  class="cells" style="top: 40%;left:33.3%;"></div>
+      
+    <div  id="Gre11"class="cells" style="top: 0;left:40%;"></div>
+    <div  id="Gre10"class="cells" style="top: 6.66%;left:40%;"></div>
+    <div  id="Gre9"class="cells safe" style="top: 13.32%;left:40%;"></div>
+    <div  id="Gre8"class="cells" style="top: 19.98%;left:40%;"></div>
+    <div  id="Gre7"class="cells" style="top: 26.64%;left:40%;"></div>
+    <div id="Gre6" class="cells" style="top: 33.3%;left:40%;"></div>
+    
+    <div id="Gre12" class="cells" style="top: 0;left:46.66%;"></div>
+    <div id="Yelwin2" class="cells yellow" style="top: 6.66%;left:46.66%;"></div>
+    <div id="Yelwin3" class="cells yellow" style="top: 13.32%;left:46.66%;"></div>
+    <div id="Yelwin4" class="cells yellow" style="top: 19.98%;left:46.66%;"></div>
+    <div id="Yelwin5" class="cells yellow" style="top: 26.64%;left:46.66%;"></div>
+    <div id="Yelwin6" class="cells yellow" style="top: 33.3%;left:46.66%;"></div>
+       
+    <div id="Gre13" class="cells" style="top: 0;left:53.32%;"></div>  
+    <div id="Yel1" class="cells y-start" style="top: 6.66%;left:53.32%;"></div>
+    <div id="Yel2" class="cells" style="top: 13.32%;left:53.32%;"></div>
+    <div id="Yel3" class="cells" style="top: 19.98%;left:53.32%;"></div>
+    <div id="Yel4" class="cells" style="top: 26.64%;left:53.32%;"></div>
+    <div id="Yel5" class="cells" style="top: 33.3%;left:53.32%;"></div>
+
+    <div id="Yel6"  class="cells" style="top: 40%; right: 33.3%"></div>
+    <div id="Yel7" class="cells" style="top: 40%;right:26.64%;"></div>
+    <div id="Yel8" class="cells" style="top: 40%;right:19.98%;"></div>
+    <div id="Yel9" class="cells safe" style="top: 40%;right:13.32%;"></div>
+    <div id="Yel10" class="cells" style="top: 40%;right:6.66%;"></div>
+    <div id="Yel11" class="cells" style="top: 40%;right:0;"></div>
+
+    <div  id="Bluwin5" class="cells blue" style="top: 46.66%; right: 33.3%"></div>
+    <div  id="Bluwin4" class="cells blue" style="top: 46.66%;right:26.64%;"></div>
+    <div  id="Bluwin3" class="cells blue" style="top: 46.66%;right:19.98%;"></div>
+    <div  id="Bluwin2"class="cells blue" style="top: 46.66%;right:13.32%;"></div>
+    <div  id="Bluwin1" class="cells blue" style="top: 46.66%;right:6.66%;"></div>
+    <div  id="Yel12" class="cells" style="top: 46.66%;right:0;"></div>
+
+    <div id="Blu5" class="cells" style="top: 53.32%; right: 33.3%"></div>
+    <div id="Blu4" class="cells" style="top: 53.32%;right:26.64%;"></div>
+    <div id="Blu3" class="cells" style="top: 53.32%;right:19.98%;"></div>
+    <div id="Blu2" class="cells" style="top: 53.32%;right:13.32%;"></div>
+    <div id="Blu1" class="cells b-start" style="top: 53.32%;right:6.66%;"></div>
+    <div  id="Yel13" class="cells" style="top: 53.32%;right:0;"></div>
+
+    <div  id="Blu11" class="cells" style="bottom: 0;left:53.32%;"></div>
+    <div  id="Blu10" class="cells" style="bottom: 6.66%;left:53.32%;"></div>
+    <div  id="Blu9" class="cells safe" style="bottom: 13.32%;left:53.32%;"></div>
+    <div  id="Blu8" class="cells" style="bottom: 19.98%;left:53.32%;"></div>
+    <div  id="Blu7" class="cells" style="bottom: 26.64%;left:53.32%;"></div>
+    <div id="Blu6" class="cells" style="bottom: 33.3%;left:53.32%;"></div>
+
+    <div  id="Blu12" class="cells" style="bottom: 0;left:46.66%;"></div>
+    <div  id="Redwin1" class="cells red " style="bottom: 6.66%;left:46.66%;"></div>
+    <div  id="Redwin2" class="cells red" style="bottom: 13.32%;left:46.66%;"></div>
+    <div  id="Redwin3" class="cells red" style="bottom: 19.98%;left:46.66%;"></div>
+    <div  id="Redwin4" class="cells red" style="bottom: 26.64%;left:46.66%;"></div>
+    <div  id="Redwin5" class="cells red" style="bottom: 33.3%;left:46.66%;"></div>
+
+    <div  id="Blu12" class="cells"         style="bottom: 0;left:40%;"></div>
+    <div  id="Red1" class="cells r-start" style="bottom: 6.66%;left:40%;"></div>
+    <div  id="Red2" class="cells"         style="bottom: 13.32%;left:40%;"></div>
+    <div  id="Red3" class="cells" style="bottom: 19.98%;left:40%;"></div>
+    <div  id="Red4" class="cells" style="bottom: 26.64%;left:40%;"></div>
+    <div  id="Red5" class="cells" style="bottom: 33.3%;left:40%;"></div>
+
+    <div  id="Red6" class="cells"      style="top: 53.32%; left: 33.3%"></div>
+    <div  id="Red7" class="cells"      style="top: 53.32%;left:26.64%;"></div>
+    <div  id="Red8" class="cells"      style="top: 53.32%;left:19.98%;"></div>
+    <div   id="Red9" class="cells safe" style="top: 53.32%;left:13.32%;"></div>
+    <div  id="Red10" class="cells"      style="top: 53.32%;left:6.66%;"></div>
+    <div  id="Red11" class="cells"      style="top: 53.32%;left:0;"></div>
+
+    <div  id="Grewin5" class="cells green" style="top: 46.66%;left: 33.3%"></div>
+    <div  id="Grewin4" class="cells green" style="top: 46.66%;left:26.64%;"></div>
+    <div  id="Grewin3" class="cells green" style="top: 46.66%;left:19.98%;"></div>
+    <div  id="Grewin2" class="cells green" style="top: 46.66%;left:13.32%;"></div>
+    <div  id="Grewin1" class="cells green" style="top: 46.66%;left:6.66%;"></div>
+    <div  id="Red12" class="cells"       style="top: 46.66%;left:0;"></div>
+
+  <div id="Comments">
+       <h1 class="commentHead">
+         Game started !!
+       </h1>
+   </div> 
+  
+
+      <!-- <div class="p2">
+        <img src="C:\Users\DELL\Desktop\Dicee Challenge - Starting Files\images\dice6.png" alt="">
+        <div class="">
+          <button onclick="R2()"type="button" name="button" class="btn">Player 2</button>
+        </div>
+      </div> -->
+    <!-- </div>
+    <div>
+      <p class="bottom">Made by Charu Patel</p>
+    </div>
+  </div> -->
+</div>
+
+<!-- DICE -->
+   <div class="first">
+    <div class="main">
+      <div class="p1">
+        <img class="img1" src="dice6.png" alt="">
+        <div class="">
+       <button id="dice" type="button" name="button" class="btn">Click</button>
+        </div> 
+      </div></div></div>
+      <!--  -->
+
+      <!-- QUIT BUTTON AND MODAL -->
+ <button id="quit-myBtn" onclick="quit()" >QUIT</button>
+
+<div id="quit-myModal" class="quit-modal">
+
+  <div class="quit-modal-content">
+    <div class="quit-modal-header">
+      <span class="quit-close">&times;</span>
+      <h2>Are you sure you want to Quit</h2>
+    </div>
+    <div class="quit-modal-body"  data-backdrop="static">
+      <button name="yes" id="yes" >Yes</button>
+      <button name="no" id="no" >No</button>
+    </div> </div></div>
+    <!--  -->
+
+<!-- CHOOSE ONE PAIR -->
+
+<!-- Modal -->
+   
+<div class="modal fade" id="myModal"  data-backdrop="static" aria-hidden="true">
+  <div class="modal-dialog"  >
+     <div class="modal-content" style=" background-color: #000000;">
+         <div class="modal-header">
+      
+      <h2>Choose </h2>
+    
+      </div>
+        <div class="modal-body">
+        
+      <button type="button" class=" bg" name="bg" >BLUE GREEN</button>
+      <button type="button" class=" ry" name="ry" >RED YELLOW</button>
+       </div> 
+      </div>
+  
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

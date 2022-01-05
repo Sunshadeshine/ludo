@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+         background-image: url("ludo.jpg");
+         background-size: cover; 
+         margin:0;
+         padding:0;
+        }
+        #heading{
+            display:block;
+            margin: 0px auto;
+            width:40%;
+        }
+        .buttons{
+            display:block;
+            margin-left:200px;
+            width:20%;
+        }
+       .btn {
+  background: #eb0c0c;
+  background-image: -webkit-linear-gradient(top, #eb0c0c, #0a202e);
+  background-image: -moz-linear-gradient(top, #eb0c0c, #0a202e);
+  background-image: -ms-linear-gradient(top, #eb0c0c, #0a202e);
+  background-image: -o-linear-gradient(top, #eb0c0c, #0a202e);
+  background-image: linear-gradient(to bottom, #eb0c0c, #0a202e);
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  -webkit-box-shadow: 5px 5px 5px #666666;
+  -moz-box-shadow: 5px 5px 5px #666666;
+  box-shadow: 5px 5px 5px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 18px 26px 20px 27px;
+  border: solid #1f628d 1px;
+  text-decoration: none;
+  margin-bottom:20px;
+  line-height: 100px;
+}
+
+.btn:hover {
+  background: #ff1717;
+  background-image: -webkit-linear-gradient(top, #ff1717, #ff0000);
+  background-image: -moz-linear-gradient(top, #ff1717, #ff0000);
+  background-image: -ms-linear-gradient(top, #ff1717, #ff0000);
+  background-image: -o-linear-gradient(top, #ff1717, #ff0000);
+  background-image: linear-gradient(to bottom, #ff1717, #ff0000);
+  text-decoration: none;
+}
+    </style>
+</head>
+<body onclick="audio()">
+<div class="heading">
+    <img id="heading"  src="Ludoheading.png" alt="">
+</div>
+<div class="buttons">
+
+
+    <!-- <a   herf="C:\Users\DELL\Desktop\ludo\codpen.html" class="btn"> 
+        2 Players
+    </a>
+    <br>
+     <button class="btn" src="codpen.html">
+        4 Players
+    </button> -->
+    <a class="btn" href="C:\Users\DELL\Desktop\ludo\codpen.html">2 Players</a>
+    <br>
+    <a class="btn"  href="C:\Users\DELL\Desktop\ludo\codpen.html">4 Players</a>
+</div>
+<script>
+    let sound;
+    function audio(){
+     sound = new Audio("click.mp3");
+    sound.play();
+    }
+//       window.onload = function() {
+//    sound = new Audio("click.mp3");
+//     sound.play();
+// ;}
+</script>
+</body>
+</html>

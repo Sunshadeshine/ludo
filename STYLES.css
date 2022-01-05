@@ -1,0 +1,48 @@
+.ludo{
+    position: relative;
+}
+.main{
+    z-index: 1;
+    background-color: black;
+    width: 560px;
+    height: 560px;
+     margin:auto;
+    border-radius: 60px;
+}
+.container{
+
+     position: absolute;
+     z-index: -1;
+   opacity: 0.8;
+   margin: auto;
+
+    }
+
+.cont12{
+    display: flex;
+    flex-direction: coloumn;
+}
+.cont34{
+    display: flex;
+    flex-direction: coloumn;
+}
+.cont1{
+background-color: green;
+width: 300px;
+height: 300px;
+}
+.cont2{
+background-color: #FFCA03;
+width: 300px;
+height: 300px;
+}
+.cont3{
+background-color: red;
+width: 300px;
+height: 300px;
+}
+.cont4{
+background-color: #000957;
+width: 300px;
+height: 300px;
+}

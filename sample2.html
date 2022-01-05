@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cont1{
+      background-color: black;
+      width: 100px;
+      height: 100px;
+
+    }
+     .cont2{
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      /* position: absolute; */
+      z-index: -1;
+    }
+    .jump{
+      position:absolute;
+      top:0;
+      left:0;
+       background-color: yellow;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+   z-index: 10;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="cont1">
+    
+  </div>
+  <div class = "cont2">
+
+    </div>
+    <div class="jump">
+
+    </div>
+    <script>
+    let element= document.querySelector(".jump");
+    let elem= document.querySelector(".cont2");
+    
+    let rect = elem.getBoundingClientRect();
+    element.style.top="40%";
+    element.style.left="60%";
+
+    </script>
+</body>
+</html>
